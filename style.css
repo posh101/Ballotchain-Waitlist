@@ -5,3 +5,123 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  overflow: hidden;
+  background-image: url(/images/lines2.png.png);
+}
+
+/* styling the navbar */
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.logo-name {
+  margin-top: 1rem;
+}
+
+img {
+  width: 27px;
+  height: 27px;
+}
+
+.navbar-brand {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #04396d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling the buttons & input field    */
+button {
+  cursor: pointer;
+  margin: 10px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.btn1,
+.btn2 {
+  color: #04396d;
+}
+
+.btn1 :hover {
+  color: white;
+  background: #04396d;
+  width: 163px;
+  height: 30px;
+  padding: 3px 3px;
+}
+
+.btn2 :hover {
+  color: white;
+  background: #04396d;
+  width: 168px;
+  height: 30px;
+  padding: 3px;
+}
+
+.waitlist-input {
+  width: 310px;
+  height: 52px;
+  padding: 5px;
+}
+
+.btn4 {
+  width: 198px;
+  height: 52px;
+  background-color: #04396d;
+  color: white;
+}
+
+/* Typography styling */
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #191818;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: left;
+  margin-top: 5rem;
+}
+
+#sub-text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.ballot {
+  color: #04396d;
+}
+
+/* Styling the icons */
+
+.social-media-icons {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  margin-top: 3.5rem;
+  gap: 27.39px;
+  position: relative;
+  right: 2.2rem;
+}
+
+.phone {
+  width: 268px;
+  height: 503px;
+  margin-top: 4.5rem;
+  float: right;
+}
