@@ -5,3 +5,75 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  overflow: hidden;
+  background-image: url(/images/lines2.png.png)
+}
+/*styling the navbar*/
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.navbar-brand {
+  font-family: Mochiy Pop P One;
+  font-size: 15px;
+  font-weight: 400;
+  color: #04396D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*Styling the button*/
+ button {
+  cursor: pointer;
+  margin: 10px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.btn1, .btn2 {
+  color: #04396D;
+}
+
+.btn1 :hover {
+  color: white;
+  background: #04396D;
+  width: 163px;
+  height: 30px;
+  padding: 3px 3px;
+}
+
+.btn2 :hover {
+  color: white;
+  background: #04396D;
+  width: 168px;
+  height: 30px;
+  padding: 3px;
+}
+
+/*Styling the Typography*/
+ p {
+  font-family: Montserrat;
+  color: #191818;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left; 
+ }
+
+@media screen and (min-width: 300px) {
+  .nav-list {font-size: 13px; display: inline-block;}
+}
