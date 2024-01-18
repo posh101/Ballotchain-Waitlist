@@ -16,7 +16,7 @@ body {
   display: flex;
   gap: 1.5rem;
   list-style-type: none;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -34,7 +34,7 @@ img {
 }
 
 .navbar-brand {
-  font-family: Mochiy Pop P One  ;
+  font-family: 'Mochiy Pop P One', sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #04396d;
@@ -89,7 +89,7 @@ button {
 /* Typography styling */
 
 h1 {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   color: #191818;
   font-size: 50px;
   font-weight: 700;
@@ -99,21 +99,15 @@ h1 {
 }
 
 #sub-text {
- font-size: 20px;
- font-weight: 400;
-}
-
-.waitlist-input {
-  width: 310px;
-  height: 52px;
-  padding: 5px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .ballot {
   color: #04396d;
 }
 
-/*Styling the icons*/
+/* Styling the icons */
 
 .social-media-icons {
   display: flex;
@@ -128,9 +122,6 @@ h1 {
 .phone {
   width: 268px;
   height: 503px;
-  margin-top: 5rem;
-}
-
-.iphone-image {
+  margin-top: 4.5rem;
   float: right;
 }
