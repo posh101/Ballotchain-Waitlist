@@ -79,5 +79,8 @@ p {
 
 @media screen and (min-width: 300px) {
   .nav-list { display: inline-block; }
-  .nav-list { font-size: 12px;}
+}
+
+@media screen and (min-width: 300px) {
+  .nav-list { font-size: 13px; }
 }
