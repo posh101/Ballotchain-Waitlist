@@ -11,99 +11,86 @@
     <title>Wiatinglist</title>
 </head>
 <body>
-    <header class=" border border-primary border-top-0">
-        <nav class="navbar navbar-expand-lg bg-light ">
-            <div class="container"id="header">
-              <a class="navbar-brand" href="index.html" >
-                <img src="images/Group 7.png" alt="BallotChain" id="logo-img">
-                <span class="logo-name">BallotChain</span>
-              </a>
-              <div class="nav-list">
-                <button type="button" class="btn1">
-                    <a class="nav-link" href="get-in-touch.html">Get in Touch</a>
-                </button>
-                <button type="button" class="btn2">
-                    <a class="nav-link" href="index.html">Join the waitlist</a>
-                </button>
-              </div>
-            </div>
-          </nav>
-    </header>
+  <!--Starting the Header-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img id="img" src="/client/images/Group 7.png" alt="Ballotchain logo">
+        </a>
+        <span class="brand-name">Ballotchain</span>
+      </div>
+      <ul class="nav d-flex">
+        <li><a id="getintouch" class="text-decoration-none" href="get-in-touch.html"> Get in Touch</a></li>
+        <li><a id="joinwaitlist" class="text-decoration-none" href="index.html"> Join the Waitlist</a></li>
+      </ul>
+    </div>
+  </nav>
+   
     <!---Starting the main-->
 
     <main>
-        <div class="container">
-            <div class="form-header">
-                <h3 class="form-text">GET IN TOUCH</h3>
-                <p class="form-header-text"> 
-                    Interaktiv skrivtavla söbel. Spepav. 
-                     Malängar vahet. Kaligen. 
-                </p>
-            </div>
-            <form class=" justify-content-center" id="myForm">
-              <div class="row g-3 justify-content-center">
-                <div class="col-md-6 sm-4 lg-6">
-                  <input type="name" class="form-control" id="inputfirstname" placeholder="First Name">
-                </div>
-                <div class="col-md-6 sm-4 lg-6">
-                  <input type="text" class="form-control" id="inputlastname" placeholder="Last Name">
-                </div>
-                <div class="col-lg-6 sm-4 md-6">
-                  <input type="email" class="form-control" id="inputemail" placeholder="Email">
-                </div>
-                <div class="col-lg-6 sm-4 md-6">
-                  <input type="number" class="form-control" id="inputphone" placeholder="Phone">
-                </div>
-                <div class="col-md-12 sm-4">
-                  <input type="text" class="form-control" id="message" placeholder="Message">
-                </div>
-                 
-                  <div class="col-lg-12 sm-4 md-12">
-                  <div class="d-grid gap-2">
-                    <button class="btn-submit" type="button">Submit</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-              </form>
- 
-  
-    <ul class="icons">
+      <div class="container">
+        <div class="form-title ">
+          <h3><strong>GET IN TOUCH</strong></h3>
+          <p class="form-text">Lorem ipsum dolor sit, amet 
+            consectetur elit.
+          </p>
+        </div>
+      <form class="row g-3 ">
+        <div class="row g-3">
+          <div class="col-lg-6 md-4 sm-4">
+            <input id="firstname" type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col-lg-6 sm-4 md-4">
+            <input id="lastname" type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+
+        <div class="row g-3 ">
+          <div class="col-lg-6 md-4 sm-4">
+            <input id="email" type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="col-lg-6 md-4 sm-4">
+            <input id="phone" type="number" class="form-control" placeholder="Phone">
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-12 md-12 sm-8 xm-8">
+            <textarea class="form-control" 
+            id="message" rows="6" 
+            placeholder="Message">
+          </textarea>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-12 md-12 sm-8 d-grid">
+            <button id="form-button" type="submit"
+             class="btn btn-lg 
+             btn-block">Submit</button>
+          </div>
+        </div>
+      </form>
+
+      <ul class="icons">
         <li>
             <img src="/client/images/x.png.png" alt="X"/>
         </li>
 
         <li>
+          <a href="https://www.linkedin.com/company/ballotchain/">
             <img src="/client/images/linkdln.png.png" alt="Linkdln"/>
+          </a>
         </li>
 
-        <li>
+        <li> <a href="https://www.instagram.com/ballotchain?igsh=MW4zMnEzMmo2NWlsYw==">
             <img src="/client/images/instagram.png.png" alt="Instagram"/>
+          </a>
         </li>
     </ul>
+      </div>
+      
 </main>
 
-<script>
-   const form = document.getElementById("myForm")
-
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-
-    const firstName = form.element.value("inputfirstname")
-    const lastName = form.element.value("inputlastname")
-    const email = form.element.value("inputemail")
-    const phone = form.element.value("inputphone")
-    const message = form.element.value("message")
-
-    if(firstName && lastname) {
-        console.log("Please inpute your first name")
-    }
-
-    else {
-        console.log("Message sent successfully")
-    }
-    })
-
-</script>
 </body>
 </html>
