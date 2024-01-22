@@ -8,11 +8,11 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/contact-form", (req, res) => {
-    res.sendFile(__dirname, 'index.php')
+app.get("/send", (req, res) => {
+    res.sendFile(__dirname, + '/client/get-in-touch.html')
 })
 
-app.post("/contact-form", (req, res) => {
+app.post("/send", (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         host: 'gsmtp.gmail.com',
@@ -29,7 +29,7 @@ app.post("/contact-form", (req, res) => {
     const mailOptions = {
         from: req.body.email,
         to: "paulorife@gmail.com",
-        subject: `Message from ${req.body.name}`,
+        subject: `Message from ${req.body.firstname}`,
         text: req.body.message
        
     }
@@ -41,6 +41,7 @@ app.post("/contact-form", (req, res) => {
         }
         else {
             console.log('Message sent' + info.response)
+            res.send("success")
         }
     })
 })
