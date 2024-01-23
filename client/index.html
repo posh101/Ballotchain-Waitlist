@@ -4,74 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BallotChain-Waitlist</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
 <!--Starting the header-->
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <img id="img" src="/client/images/Group 7.png" alt="Ballotchain logo">
-        </a>
-        <span class="brand-name">Ballotchain</span>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a id="logo-link" class="navbar-brand  d-flex" href="index.html">
+        <img id="logo" src="/client/images/Group 7.png" alt="Ballotchain logo">
+        <span id="logo-brand">BallotChain</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item " id="nav-item1">
+            <a class="nav-link active" aria-current="page" href="get-in-touch.html">Get in Touch</a>
+          </li>
+          <li class="nav-item px-5 " id="nav-item2">
+            <a class="nav-link " aria-current="" href="index.html">Join the Waitlist</a>
+          </li>
+        </ul>
       </div>
-      <ul class="nav d-flex">
-        <li><a id="getintouch" class="text-decoration-none" href="get-in-touch.html"> Get in Touch</a></li>
-        <li><a id="joinwaitlist" class="text-decoration-none" href="index.html"> Join the Waitlist</a></li>
-      </ul>
     </div>
   </nav>
 <!--Starting the main-->
-
-<main>
-    <section>
-        <div class="container container-full">
-            <div class="row" id="body-content">
-            <div class=" col-6 sm-4 text-wrap" >
-                <h1 id="text">
-                    UNLOCK SECURE, TRANSPARENT AND CONVENIENT VOTING 
-                    WITH <span class="ballot">BALLOTCHAIN</span>
-                </h1>
-                <P class="text-wrap" id="sub-text">
-                    A fundamental shift in how people will ultimately
-                     vote using private technology or blockchain.
-                </P>
-                <div class="join-waitlist">
-                    <input class="waitlist-input" placeholder="Email address"/>
-                    <button type="button" class="btn4">Join Waitlist</button>
+<div class="container">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-md-6 sm-4 xs-4">
+                <div class="vote-title">
+                    <h1>
+                        UNLOCK SECURE, 
+                         TRANSPARENT AND 
+                          CONVENIENT VOTING 
+                            WITH <span>BALLOTCHAIN</span>
+                    </h1>
+                    <p>
+                        A fundamental shift in how people will ultimately 
+                        vote using private technology or blockchain.
+                    </p>
+                    <div class="join-waitlist">
+                        <input class="waitlist-input" placeholder="Email address">
+                        <button class="btn4" type="submit">Join Waitlist</button>
+                    </div>
                 </div>
+            </div>
+            <div class="col-md-6 sm-4 xs-4">
+                <img src="/client/images/iphone.png.png" 
+                class="phone-image"
+                alt="iphone image">
+            </div>
         </div>
+    </div>
+</div>
 
-             <div class="col-6" sm-6 lg-6>
-                <div class="iphone-image">
-                    <img src="/client/images/iphone.png.png" alt="iphone" class="phone"/>
-                </div>
-             </div>
-             
-      <div class="" id="social-icons">
-        <ul class="social-media-icons">
-            <li>
+<!--Footer section-->
+
+<footer>
+    <div class="" id="social-icons">
+        <div class="social-media-icons">
+            <div>
                 <a href="#"> <img src="images/x.png.png" alt="X"/></a>
-            </li>
+            </div>
 
-            <li>
+            <div>
                 <a href="https://www.linkedin.com/company/ballotchain/"> <img src="images/linkdln.png.png" alt="linkdln"/></a>
-            </li>
+            </div>
 
-            <li>
+            <div>
                 <a href="https://www.instagram.com/ballotchain?igsh=MW4zMnEzMmo2NWlsYw==
                 "> <img src="images/instagram.png.png" alt="instagram"/></a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
             </div>
         </div>
         </div>
-    </section>
-</main>
+</footer>
+
+
+
 </body>
 </html>
