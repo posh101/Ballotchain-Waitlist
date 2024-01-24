@@ -12,42 +12,55 @@ body {
   overflow: hidden;
 }
 
-#logo-link {
-  display: block;
-  flex-direction: column;
-  align-items: center;
-}
-
-#logo {
-  width: 35px;
-  height: 38px;
-}
+/* Styling the Nav */
 
 #logo-brand {
   font-family: 'Mochiy Pop P One', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  line-height: 29px;
+  display: flex;
   color: #04396d;
 }
 
-#nav-item1 :hover {
-  background-color: #04396d;
-  width: 120px;
-  height: 45px;
-  color: white;
-}
-
-#nav-item2 :hover {
-  background-color: #04396d;
-  width: 150px;
-  height: 45px;
-  color: white;
+#brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 nav {
   border: 1px solid;
-  border-color:#04396d;
+  border-color: #04396d;
+  width: 100%;
+  height: 102px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+#nav-item1 :hover {
+  background-color: #04396d;
+  width: 130px;
+  height: 45px;
+  color: white;
+  padding: 10px;
+}
+
+#nav-item2 :hover {
+  background-color: #04396d;
+  width: 157px;
+  height: 45px;
+  color: white;
+  padding: 10px;
 }
 
 .wrapper {
@@ -72,14 +85,8 @@ nav {
 .phone-image {
   width: 268px;
   height: 480px;
-  margin-left: 50%;
-  
+  margin-left: 25%;
 }
-
-  .container {
-    width: 100%;
-    height: 100%;
-  }
 
 /* Styling the form */
 
@@ -111,6 +118,7 @@ nav {
 
 #message {
   border-color: #04396d;
+  margin-left: 0 !important;
 }
 
 .form-title {
@@ -119,14 +127,6 @@ nav {
   justify-content: center;
   flex-direction: column;
   padding-top: 3rem;
-}
-
-.icons {
-  width: 5px;
-  display: flex;
-  list-style-type: none;
-  gap: 10px;
-  padding: 20px 0 10px 0;
 }
 
 .form-text {
@@ -177,48 +177,31 @@ nav {
   justify-content: center;
 }
 
- .message .success {
+.message .success {
   font-size: 20px;
   font-weight: bolder;
   color: #04396d;
-  padding: 5px;
-  animation: buttons .3s linear;
-  
+  margin-top: 15px;
+  display: none;
 }
 
 .seccess {
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: center;
 }
 
 .check-icon img {
-  position: absolute;
-  top: 2px;
   width: 50px;
   height: 50px;
-  color:#04396d;
 }
 
 .message .danger {
   font-size: 20px;
   font-weight: bold;
   color: red;
-  transition: .3s;
-  animation: buttons .3s linear;
   display: none;
-}
-
-@keyframes buttons {
-  0% {
-    transform: scale(0.1);
-  }
-  50% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale();
-  }
 }
 
 .join-waitlist {
@@ -232,43 +215,60 @@ nav {
   width: 15px;
   height: 15px;
   position: absolute;
-  margin-top: 5%;
-  padding: 3rem;
+  bottom: 1.5rem;
+  left: 1rem;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   nav {
     width: 100%;
   }
-.container 
-{ 
-  width: 100%;
-  height: 100%;
-  display: block;
-}
 
-.vote-title h1
-{
-  text-wrap: wrap;
-  line-height: 15px;
-}
+  .container {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 
-.vote-title p 
-{
-  text-wrap: wrap;
-}
+  .vote-title h1 {
+    line-height: 30px;
+  }
 
-.phone-image
-{
-  margin-left: 20%;
-}
+  .phone-image {
+    margin-left: 50% !important;
+  }
 
-.join-waitlist
-{
-  display: block;
-  row-gap: 20px;
-}
+  .join-waitlist {
+    display: block;
+    row-gap: 20px;
+  }
 
+  #navbarText {
+    margin-top: 2rem;
+    font-size: 20px;
+    background-color: #04396d;
+    color: white;
+  }
+
+  .check-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #nav-item2 {
+    color: white;
+  }
+
+  #nav-item1 :hover {
+    background-color: #04396d;
+    width: 75px;
+    height: 40px;
+    color: white;
+  }
+
+  #navbar-text {
+    background-color: whitesmoke;
+  }
 }
 
 @media (min-width: 774px) and (max-width: 1280px) {
@@ -276,28 +276,57 @@ nav {
     width: 100%;
   }
 
-  .container 
-  { 
+  .container {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: block;
   }
-  
-  .vote-title h1
-  {
-    text-wrap: wrap;
-    line-height: 45px;
+
+  .vote-title h1 {
+    line-height: 30px;
   }
-  
-  .vote-title p 
-  {
-    text-wrap: wrap;
+
+  .phone-image {
+    margin-left: 20%;
   }
-  
-  .phone-image 
-  {
-    margin-left: 50%;
-    margin-top: 3rem;
+
+  #navbarText {
+    margin-top: 15px;
+    height: 150px;
+    background-color: #04396d;
+  }
+
+  #nav-item {
+    gap: 5px !important;
+    margin-top: 1rem;
+  }
+
+  #nav-item1 {
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+  }
+
+  .success {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .check-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #nav-item2 {
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+  }
+
+  #nav-item :hover {
+    background-color: #04396d;
+    width: 70px;
+    height: 30px;
   }
 }
 
@@ -306,53 +335,64 @@ nav {
     width: 100%;
   }
 
-  .container 
-{ 
-  width: 100%;
-  height: 100%;
- 
-}
+  .container {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 
-.vote-title h1
-{
-  text-wrap: wrap;
-  line-height: 75px;
-}
+  .vote-title h1 {
+    line-height: 30px;
+  }
 
-.vote-title p 
-{
-  text-wrap: wrap;
-}
+  .phone-image {
+    margin-left: 20%;
+  }
 
-.phone-image 
-{
-  margin-right: 50%;
-  margin-top: 3rem;
-}
-}
+  #navbarText {
+    margin-top: 15px;
+    height: 150px;
+    background-color: #04396d;
+  }
 
-@media (min-width: 550px) and (max-width: 675px) {
-  .container 
-{ 
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
+  ul {
+    gap: 5px !important;
+    margin-top: 1rem;
+  }
 
-.vote-title h1
-{
-  text-wrap: wrap;
-  line-height: 30px;
-}
+  #nav-item1 {
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+  }
 
-.vote-title p 
-{
-  text-wrap: wrap;
-}
+  .success {
+    font-size: 10px;
+    font-weight: 600;
+  }
 
-.phone-image 
-{
-  margin-left: 50%;
-  margin-top: 3rem;
-}
+  .check-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #nav-item2 {
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+  }
+
+  #nav-item1 :hover {
+    background-color: #04396d;
+    width: 75px;
+    height: 40px;
+    color: white;
+  }
+
+  #nav-item2 :hover {
+    background-color: #04396d;
+    width: 75px;
+    height: 40px;
+    color: white;
+  }
 }
