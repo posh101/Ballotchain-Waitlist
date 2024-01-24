@@ -12,61 +12,81 @@ body {
   overflow: hidden;
 }
 
-/*Styling the header */
-
-.navbar-brand {
-  display: grid;
+#logo-link {
+  display: block;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  justify-content: center;
-  padding-left: 20px;
 }
 
-nav {
-  border: 1px solid;
-  border-color: #04396d;
-  background-color: white;
+#logo {
+  width: 35px;
+  height: 38px;
 }
 
-ul {
-  font-size: 20px;
-  font-weight: 400;
-  gap: 2.5rem;
-  text-decoration: none;
-}
-
-a {
-  color: black;
-}
-
-li :hover{
-  background-color: #04396d;
-  color: white;
-  width: 180px;
-  height: 79px;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.brand-name {
+#logo-brand {
   font-family: 'Mochiy Pop P One', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 29px;
   color: #04396d;
 }
 
-#img {
-  width: 33.61px;
-  height: 38px;
+#nav-item1 :hover {
+  background-color: #04396d;
+  width: 120px;
+  height: 45px;
+  color: white;
 }
 
-/*Styling the form */
+#nav-item2 :hover {
+  background-color: #04396d;
+  width: 150px;
+  height: 45px;
+  color: white;
+}
 
-#form-button {
+nav {
+  border: 1px solid;
+  border-color:#04396d;
+}
+
+.wrapper {
+  padding-top: 3rem;
+}
+
+.vote-title h1 {
+  line-height: 60px;
+  font-weight: bolder;
+}
+
+.vote-title span {
+  color: #04396d;
+}
+
+.vote-title p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.phone-image {
+  width: 268px;
+  height: 480px;
+  margin-left: 50%;
+  
+}
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+/* Styling the form */
+
+#submit {
   background-color: #04396d;
   color: white;
+  height: 67px;
 }
 
 #firstname {
@@ -93,10 +113,6 @@ li :hover{
   border-color: #04396d;
 }
 
-#form-button {
-  height: 67px;
-}
-
 .form-title {
   display: flex;
   align-items: center;
@@ -117,4 +133,226 @@ li :hover{
   font-size: 20px;
   font-weight: 300;
   text-align: center;
+}
+
+/* Styling the Join the waitlist page */
+
+#text {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 70px;
+  padding-top: 5rem;
+}
+
+.ballot {
+  color: #04396d;
+}
+
+#sub-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.waitlist-input {
+  width: 310px;
+  height: 52px;
+  padding: 5px;
+  border-color: #04396d;
+  margin-top: 2rem;
+}
+
+.btn4 {
+  width: 198px;
+  height: 52px;
+  background-color: #04396d;
+  color: white;
+}
+
+.message {
+  width: 100%;
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+ .message .success {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #04396d;
+  padding: 5px;
+  animation: buttons .3s linear;
+  
+}
+
+.seccess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-icon img {
+  position: absolute;
+  top: 2px;
+  width: 50px;
+  height: 50px;
+  color:#04396d;
+}
+
+.message .danger {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  transition: .3s;
+  animation: buttons .3s linear;
+  display: none;
+}
+
+@keyframes buttons {
+  0% {
+    transform: scale(0.1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale();
+  }
+}
+
+.join-waitlist {
+  padding-top: 2rem;
+}
+
+.social-media-icons {
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  margin-top: 5%;
+  padding: 3rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  nav {
+    width: 100%;
+  }
+.container 
+{ 
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.vote-title h1
+{
+  text-wrap: wrap;
+  line-height: 15px;
+}
+
+.vote-title p 
+{
+  text-wrap: wrap;
+}
+
+.phone-image
+{
+  margin-left: 20%;
+}
+
+.join-waitlist
+{
+  display: block;
+  row-gap: 20px;
+}
+
+}
+
+@media (min-width: 774px) and (max-width: 1280px) {
+  nav {
+    width: 100%;
+  }
+
+  .container 
+  { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .vote-title h1
+  {
+    text-wrap: wrap;
+    line-height: 45px;
+  }
+  
+  .vote-title p 
+  {
+    text-wrap: wrap;
+  }
+  
+  .phone-image 
+  {
+    margin-left: 50%;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 730px) {
+  nav {
+    width: 100%;
+  }
+
+  .container 
+{ 
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.vote-title h1
+{
+  text-wrap: wrap;
+  line-height: 75px;
+}
+
+.vote-title p 
+{
+  text-wrap: wrap;
+}
+
+.phone-image 
+{
+  margin-right: 50%;
+  margin-top: 3rem;
+}
+}
+
+@media (min-width: 550px) and (max-width: 675px) {
+  .container 
+{ 
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.vote-title h1
+{
+  text-wrap: wrap;
+  line-height: 30px;
+}
+
+.vote-title p 
+{
+  text-wrap: wrap;
+}
+
+.phone-image 
+{
+  margin-left: 50%;
+  margin-top: 3rem;
+}
 }
