@@ -137,7 +137,10 @@ const danger = document.getElementById('danger')
       setTimeout(() => {
       email.value = ""
       }, 5000)
-      return success.style.display = 'block'
+      
+      setTimeout(() => {
+        return success.style.display = 'block'
+      }, 5000)
     }
 
     return JSON.stringify(response(formData))

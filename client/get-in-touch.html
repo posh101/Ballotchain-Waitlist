@@ -45,15 +45,18 @@
     
       <div class="container"> 
       <form onsubmit="contactForm" id="contact-form">
-        <div class="row g-3">
+        <div class="row">
        <div class="form-title ">
         <h3><strong>GET IN TOUCH</strong></h3>
-        <p class="form-text">Lorem ipsum dolor sit, amet 
-          consectetur elit.
+        <p class="form-text">
+          Exciting times are ahead! Join our wait list 
+          to secure your spot for exclusive early access
+          and stay in the loop on all things BallotChain 
+          Lets shape the future of online voting together.
         </p>
       </div>
 
-        <div class="row g-3">
+        <div class="row g-2">
           <div class="col-lg-6 md-4 sm-4">
             <input id="firstname" type="text" 
             class="form-control" 
@@ -69,7 +72,7 @@
           </div>
         </div>
 
-        <div class="row g-3 ">
+        <div class="row g-2 ">
           <div class="col-lg-6 md-4 sm-4">
             <input id="email" type="email" 
             class="form-control" 
@@ -85,7 +88,7 @@
           </div>
         </div>
 
-        <div class="row g-3">
+        <div class="row g-2">
           <div class="col-lg-12 md-12 sm-8 xm-8">
             <textarea class="form-control" 
             id="message" rows="6" 
@@ -94,7 +97,7 @@
           </div>
         </div>
 
-        <div class="row g-3">
+        <div class="row g-2">
           <div class="col-lg-12 md-12 sm-8 d-grid">
             <button id="submit" type="submit"
             value="submit"
@@ -176,7 +179,7 @@ contactForm.addEventListener('submit', async(e) => {
       return danger.style.display = 'block'
     }
 
-    else {
+    else  {
      
       setTimeout(() => {
       firstname.value = ""
@@ -184,8 +187,11 @@ contactForm.addEventListener('submit', async(e) => {
       email.value = ""
       phone.value = ""
       message.value = ""
+      }, 3000)
+      
+      setTimeout(() => {
+        return success.style.display = 'block'
       }, 5000)
-      return success.style.display = 'block'
     }
 
     return JSON.stringify(response(formData))
@@ -193,8 +199,6 @@ contactForm.addEventListener('submit', async(e) => {
   }catch(error) {
     console.log(error.message)
   }
-
-  contactForm.reset()
 })
 
 

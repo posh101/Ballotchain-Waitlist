@@ -97,28 +97,27 @@ ul {
 }
 
 #firstname {
-  height: 65px;
+  height: 60px;
   border-color: #04396d;
 }
 
 #lastname {
-  height: 65px;
+  height: 60px;
   border-color: #04396d;
 }
 
 #email {
-  height: 65px;
+  height: 60px;
   border-color: #04396d;
 }
 
 #phone {
-  height: 65px;
+  height: 60px;
   border-color: #04396d;
 }
 
 #message {
   border-color: #04396d;
-  margin-left: 0 !important;
 }
 
 .form-title {
@@ -126,13 +125,14 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .form-text {
   font-size: 20px;
   font-weight: 300;
   text-align: center;
+  width: 600px;
 }
 
 /* Styling the Join the waitlist page */
@@ -178,10 +178,10 @@ ul {
 }
 
 .message .success {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bolder;
   color: #04396d;
-  margin-top: 15px;
+  margin-top: 5px;
   display: none;
 }
 
@@ -231,11 +231,11 @@ ul {
   }
 
   .vote-title h1 {
-    line-height: 30px;
+    line-height: 35px;
   }
 
   .phone-image {
-    margin-left: 50% !important;
+    margin-left: 10% !important;
   }
 
   .join-waitlist {
@@ -243,10 +243,14 @@ ul {
     row-gap: 20px;
   }
 
+  .form-text {
+    width: 400px;
+  }
+
   #navbarText {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 20px;
-    background-color: #04396d;
+    background-color: whitesmoke;
     color: white;
   }
 
@@ -261,17 +265,23 @@ ul {
 
   #nav-item1 :hover {
     background-color: #04396d;
-    width: 75px;
+    width: 100%;
     height: 40px;
     color: white;
+    padding: 5px;
   }
 
-  #navbar-text {
-    background-color: whitesmoke;
+  #nav-item2 :hover {
+    background-color: #04396d;
+    width: 100%;
+    height: 40px;
+    color: white;
+    padding: 5px;
   }
+
 }
 
-@media (min-width: 774px) and (max-width: 1280px) {
+@media (min-width: 744px) and (max-width: 990px) {
   nav {
     width: 100%;
   }
@@ -283,7 +293,7 @@ ul {
   }
 
   .vote-title h1 {
-    line-height: 30px;
+    line-height: 45px;
   }
 
   .phone-image {
@@ -293,12 +303,12 @@ ul {
   #navbarText {
     margin-top: 15px;
     height: 150px;
-    background-color: #04396d;
+    background-color: whitesmoke;
   }
 
   #nav-item {
-    gap: 5px !important;
-    margin-top: 1rem;
+    gap: 10px !important;
+    margin-top: 0.5rem;
   }
 
   #nav-item1 {
@@ -321,78 +331,110 @@ ul {
     font-size: 25px;
     font-weight: 300;
     color: white;
-  }
-
-  #nav-item :hover {
-    background-color: #04396d;
-    width: 70px;
-    height: 30px;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 730px) {
-  nav {
-    width: 100%;
-  }
-
-  .container {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  .vote-title h1 {
-    line-height: 30px;
-  }
-
-  .phone-image {
-    margin-left: 20%;
-  }
-
-  #navbarText {
-    margin-top: 15px;
-    height: 150px;
-    background-color: #04396d;
-  }
-
-  ul {
-    gap: 5px !important;
-    margin-top: 1rem;
-  }
-
-  #nav-item1 {
-    font-size: 25px;
-    font-weight: 300;
-    color: white;
-  }
-
-  .success {
-    font-size: 10px;
-    font-weight: 600;
-  }
-
-  .check-icon img {
-    width: 30px;
-    height: 30px;
-  }
-
-  #nav-item2 {
-    font-size: 25px;
-    font-weight: 300;
-    color: white;
+    margin-top: 10px;
   }
 
   #nav-item1 :hover {
     background-color: #04396d;
-    width: 75px;
-    height: 40px;
+    width: 100%;
+    height: 45px;
     color: white;
   }
 
   #nav-item2 :hover {
     background-color: #04396d;
-    width: 75px;
+    width: 100%;
+    height: 45px;
+    color: white;
+  }
+
+  ul {
+    gap: 10px !important;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 730px) {
+  nav {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .vote-title h1 {
+    line-height: 40px;
+  }
+
+  .success {
+    margin: 0px !important;
+    padding: 0;
+  }
+
+  ul {
+    gap: 3px !important;
+    margin-top: 1rem;
+  }
+
+  #nav-item1 {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+  }
+
+  .success {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .check-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #nav-item2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+  }
+
+  #navbarText {
+    margin-top: 0.5rem;
+    height: 7rem;
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: white;
+  }
+
+  .check-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #nav-item2 {
+    color: white;
+  }
+
+  #nav-item1 :hover {
+    background-color: #04396d;
+    width: 100%;
     height: 40px;
     color: white;
+    padding: 5px;
+  }
+
+  #nav-item2 :hover {
+    background-color: #04396d;
+    width: 100%;
+    height: 40px;
+    color: white;
+    padding: 5px;
+  }
+
+  .form-text {
+    width: 75%;
   }
 }
