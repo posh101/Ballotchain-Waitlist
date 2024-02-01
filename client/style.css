@@ -83,12 +83,17 @@ ul {
 }
 
 .phone-image {
-  width: 268px;
-  height: 480px;
+  width: 250px;
+  height: 450px;
   margin-left: 25%;
 }
 
 /* Styling the form */
+
+#form {
+  display: flex;
+  gap: 5px;
+}
 
 #submit {
   background-color: #04396d;
@@ -106,7 +111,7 @@ ul {
   border-color: #04396d;
 }
 
-#email {
+#form-email {
   height: 60px;
   border-color: #04396d;
 }
@@ -154,16 +159,14 @@ ul {
   line-height: 27px;
 }
 
-.waitlist-input {
-  width: 310px;
-  height: 52px;
+#email {
+  width: 300px;
+  height: 55px;
   padding: 5px;
-  border-color: #04396d;
-  margin-top: 2rem;
 }
 
 .btn4 {
-  width: 198px;
+  width: 170px;
   height: 52px;
   background-color: #04396d;
   color: white;
@@ -238,9 +241,9 @@ ul {
     margin-left: 10% !important;
   }
 
-  .join-waitlist {
+  #form {
     display: block;
-    row-gap: 20px;
+    row-gap: 5px;
   }
 
   .form-text {
@@ -436,5 +439,14 @@ ul {
 
   .form-text {
     width: 75%;
+  }
+
+  #btn4 {
+    margin-top: 5px;
+  }
+ 
+  #form {
+    display: block;
+    row-gap: 5px;
   }
 }
